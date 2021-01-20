@@ -16,6 +16,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/system/t-single")
 public class TSingleController {
-
 }
 

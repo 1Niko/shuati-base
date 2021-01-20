@@ -26,14 +26,14 @@ public class GlobalExceptionHandler {
 
     /**
      * 自定义异常捕获
-     * @param e
+     * @param e 异常原因
      * @return
      */
     @ExceptionHandler(ArithmeticException.class)
     public Result error(ArithmeticException e){
         e.printStackTrace();
-        return Result.error().code(ResultCode.ARITHMETICEXCEPTION.getCode())
-                .message(ResultCode.ARITHMETICEXCEPTION.getMessage());
+        return Result.error().code(ResultCode.ARITHMETIC_EXCEPTION.getCode())
+                .message(ResultCode.ARITHMETIC_EXCEPTION.getMessage());
     }
     @ExceptionHandler(BusinessException.class)
     public Result error(BusinessException e){

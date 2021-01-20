@@ -45,7 +45,7 @@ public class UserController {
         if (user != null){
             return Result.ok().data("user",user);
         }else {
-            throw new BusinessException(ResultCode.USER_NOT_FOUND.getCode(),ResultCode.USER_NOT_FOUND.getMessage());
+            throw new BusinessException(ResultCode.USER_ACCOUNT_NOT_EXIST.getCode(),ResultCode.USER_ACCOUNT_NOT_EXIST.getMessage());
         }
 
     }
