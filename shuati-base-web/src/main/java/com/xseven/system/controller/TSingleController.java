@@ -6,10 +6,7 @@ import com.xseven.system.entity.TSingle;
 import com.xseven.system.service.TSingleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -30,8 +27,8 @@ public class TSingleController {
     }
 
     @ApiOperation("按id获取题目")
-    @GetMapping("/getSingle")
-    public Result getSingle(@RequestParam(defaultValue = "1")Integer id){
+    @GetMapping("/{id}")
+    public Result getSingle(@PathVariable("id") Integer id){
         TSingle tSingle = tSingleService.getById(id);
         return Result.ok().data("tSingle",tSingle);
     }
