@@ -12,7 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 /**
  * @Author: xseven
  * @DateTime: 2021/1/8  16:10
- * @Description: TODO
+ * @Description: 接口文档配置
  */
 @Configuration
 @EnableSwagger2WebMvc
