@@ -31,6 +31,8 @@
         <mysql.version>8.0.22</mysql.version>
         <!--knife4j优化swagger-ui-->
         <knife4j.version>2.0.7</knife4j.version>
+        <!--easy-captcha验证码-->
+        <easy-captcha>1.6.2</easy-captcha>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -54,20 +56,25 @@
                 <artifactId>velocity-engine-core</artifactId>
                 <version>${velocity.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>io.springfox</groupId>-->
-<!--                <artifactId>springfox-swagger2</artifactId>-->
-<!--                <version>${swag.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>io.springfox</groupId>-->
-<!--                <artifactId>springfox-swagger-ui</artifactId>-->
-<!--                <version>${swag.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>io.springfox</groupId>-->
+            <!--                <artifactId>springfox-swagger2</artifactId>-->
+            <!--                <version>${swag.version}</version>-->
+            <!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>io.springfox</groupId>-->
+            <!--                <artifactId>springfox-swagger-ui</artifactId>-->
+            <!--                <version>${swag.version}</version>-->
+            <!--            </dependency>-->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.whvcse</groupId>
+                <artifactId>easy-captcha</artifactId>
+                <version>${easy-captcha}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

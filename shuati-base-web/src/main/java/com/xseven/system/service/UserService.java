@@ -2,6 +2,7 @@ package com.xseven.system.service;
 
 import com.xseven.system.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.springframework.security.core.userdetails.UserDetails;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UserService extends IService<User> {
 
+    UserDetails loadSystemUserByName(String username);
 }
