@@ -1,6 +1,6 @@
 package com.xseven.system.mapper;
 
-import com.xseven.system.entity.TJudgement;
+import com.xseven.system.entity.TJudgment;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author kjj
- * @since 2021-01-28
+ * @since 2021-01-29
  */
-public interface TJudgementMapper extends BaseMapper<TJudgement> {
+public interface TJudgmentMapper extends BaseMapper<TJudgment> {
 
 }

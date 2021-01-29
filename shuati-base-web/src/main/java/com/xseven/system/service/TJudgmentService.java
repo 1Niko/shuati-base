@@ -1,6 +1,6 @@
 package com.xseven.system.service;
 
-import com.xseven.system.entity.TJudgement;
+import com.xseven.system.entity.TJudgment;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author kjj
- * @since 2021-01-28
+ * @since 2021-01-29
  */
-public interface TJudgementService extends IService<TJudgement> {
+public interface TJudgmentService extends IService<TJudgment> {
 
 }
